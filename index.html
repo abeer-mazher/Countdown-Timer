@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h2>Timer</h2>
+        <div class="input-div">
+            <div><input type="number" id="inputHours" placeholder="Hours" min="0" max="24" maxlength="2" ></div>
+            <div><input type="number" id="inputMinutes" placeholder="Minutes" min="0" max="60" maxlength="2"></div>
+            <div><input type="number" id="inputSeconds" placeholder="Seconds" min="0" max="60" maxlength="2" ></div>
+        </div>
+
+        <div class="input-display">
+            <h1><span id="hoursDis">00</span><span>:</span><span id="minutesDis">00</span><span>:</span><span id="secondsDis">00</span></h1>
+        </div>
+
+        <div class="btn-cntrl">
+            <button onclick="startTimer()">Start</button>
+            <button onclick="stopTimer()">Stop</button>
+            <button onclick="resetTimer()">Reset</button>
+        </div>
+    </div>
+    
+
+    <script src="./app.js"></script>
+</body>
+</html>
